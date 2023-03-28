@@ -15,9 +15,16 @@ def perform_query():
     #     )
     # return jsonify(list(result))
 
+    # with open(data['file_name']) as f:
+    #     result = map_query(
+    #         value = data['value1'],
+    #         data = f.readlines()
+    #     )
+    # return jsonify(list(result))
+
     with open(data['file_name']) as f:
-        result = map_query(
-            value = data['value1'],
+        result = limit_query(
+            value=data['value1'],
             data = f.readlines()
         )
     return jsonify(list(result))
