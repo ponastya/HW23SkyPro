@@ -3,7 +3,7 @@ def filter_query(value, data):
 
 
 def map_query(value, data):
-    return map(lambda x: x.split()[value], data)
+    return map(lambda x: x.split()[int(value)], data)
 
 
 def unique_query(data):
