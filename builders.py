@@ -1,6 +1,8 @@
 from typing import Optional, Callable
 
-from functions import *
+from functions import filter_query, unique_query, limit_query, map_query, sort_query, regex_query
+from typing import Iterable, Any, Set, Iterator
+
 
 CMD_TO_FUNCTIONS: dict[str, Callable] = {
     'filter': filter_query,

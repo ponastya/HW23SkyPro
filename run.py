@@ -1,5 +1,5 @@
 from flask import Flask
-import mypy
+
 from app import create_app
 
 app: Flask = create_app()
